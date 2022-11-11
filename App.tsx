@@ -19,7 +19,7 @@ import AppLoading from 'expo-app-loading';
 import { Home } from './src/screens/Home';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
-import { StatusBar } from 'react-native';
+import { CarDetails } from './src/screens/CarDetails';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -44,12 +44,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="transparent"
-        translucent
-      />
-      <Home />
+      <CarDetails />
     </ThemeProvider>
   );
 }
